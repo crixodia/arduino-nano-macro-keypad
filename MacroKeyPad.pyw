@@ -1,7 +1,7 @@
 #! python3
 import pyautogui, sys, time, serial
 
-port = 'COM6'   #Windows COMX | Linux /dev/ttyUSBX or /dev/ttyACMX
+port = 'COM4'   #Windows COMX | Linux /dev/ttyUSBX or /dev/ttyACMX
 baud = 9600
 
 NanoSerial = serial.Serial(port, baud)
@@ -24,22 +24,22 @@ while 1:
     elif data == '6':
         pyautogui.press('volumeup')     #Turn volume up
     elif data == '1':
-        pyautogui.hotkey('ctrl', 'alt', 'c')    #Chatting
+        pyautogui.hotkey('ctrl', 'b', '"')
     elif data == '2':
-        pyautogui.hotkey('ctrl', 'alt', 'd')    #Gaming
+        pyautogui.hotkey('ctrl', 'b', '%')
     elif data == '3':
-        pyautogui.hotkey('ctrl', 'alt', 'f')    #Waiting
+        pyautogui.hotkey('ctrl', 'b', 'c')
     elif data == '*':
-        pyautogui.hotkey('ctrl', 'alt','a')     #Start/Stop streaming OBS
+        pyautogui.hotkey('ctrl', 'b', 'p')
     elif data == '0':
-        pyautogui.hotkey('ctrl', 'alt','b')     #Start/Stop recording OBS
+        pyautogui.hotkey('ctrl', 'b', 'n')
     elif data == '#':
-        pyautogui.hotkey('ctrl', 'alt','e')     #Transition OBS
+        pyautogui.hotkey('ctrl', 'b', 'x')
     elif data == 'A':
-        pyautogui.hotkey('ctrl', 'alt','g')     #Mute/Unmute desktop
+        pyautogui.hotkey('ctrl', 'alt','g')
     elif data == 'B':
-        pyautogui.hotkey('ctrl', 'alt', 'h')    #Mute/Unmute headset
+        pyautogui.hotkey('ctrl', 'alt', 'h')
     elif data == 'C':
-        pyautogui.hotkey('ctrl', 'alt','i')     #Mute/Unmute mic
+        pyautogui.hotkey('ctrl', 'alt','i')
     elif data == 'D':
         pyautogui.hotkey('ctrl', 'alt','del')
