@@ -2,7 +2,7 @@
 
 Crear macros puede ser muy fácil con un arduino Leonardo o Micro Pro. Sin embargo, puede que no tengas a tu disposición uno de estos. Podemos usar un arduino común y corriente comunicándolo con un script que haga las funciones de teclado. Para ello usaremos python.
 
-En arduino, cada vez que presionemos una tecla enviará un caracter a través de Serial. Con python debemos capturar qué caracter fue y que acción de teclado se ejecutará. Esto para cada tecla del Keypad.
+En arduino, cada vez que presionemos una tecla enviará un carácter a través de Serial. Con python debemos capturar qué carácter fue y que acción de teclado se ejecutará. Esto para cada tecla del Keypad.
 
 ## Contenido
 
@@ -21,7 +21,7 @@ En arduino, cada vez que presionemos una tecla enviará un caracter a través de
 
 ## Dependencias
 
-Es necesario intalar algunos requisitos para python antes de ejecutar el código.
+Es necesario instalar algunos requisitos para python antes de ejecutar el código.
 
 ### Actualizando pip
 
@@ -39,7 +39,7 @@ sudo python3 -m pip install --upgrade pip
 
 ### pyserial
 
-Esta librería nos ayudarára con la comunicación entre el arduino y python a través del puerto serial.
+Esta librería nos ayudará con la comunicación entre el arduino y python a través del puerto serial.
 
 ```shell
 python -m pip install pyserial
